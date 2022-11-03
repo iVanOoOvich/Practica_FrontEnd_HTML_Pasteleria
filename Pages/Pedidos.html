@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body>
+    <!-- Logo -->
+    <center>
+        <img src="../Pics/Logo.png" alt="Logo"width="1280px" height="100px"><hr>
+        <header>
+            <nav>
+                <a href="../index.html">Inicio</a>&nbsp;&nbsp;&nbsp;
+                <a href="./Carta.html">Carta</a>&nbsp;&nbsp;&nbsp;
+                <a href="./Contacto.html">Contacto</a>&nbsp;&nbsp;&nbsp;
+                <a href="./Administrador.html">Administrador</a><hr>
+            </nav>
+        </header>
+    </center>
+    <!--Selección única para saber que pastel quiere-->
+    <center>
+        <h2>Sabor del pastel?</h2>
+        <input type="radio" id="Imposible" name="Pastel" value="Imposible">
+        <label for="Imposible">Imposible</label><br>
+        <input type="radio" id="Frances" name="Pastel" value="Frances">
+        <label for="Frances">Frances</label><br>
+        <input type="radio" id="Italiano" name="Pastel" value="Italiano">
+        <label for="Italiano">Italiano</label><br>
+        <input type="radio" id="Oriental" name="Pastel" value="Oriental">
+        <label for="Oriental">Oriental</label><br>
+        <input type="radio" id="Gringo" name="Pastel" value="Gringo">
+        <label for="Gringo">Gringo</label><br>
+        <input type="radio" id="Turco" name="Pastel" value="Turco">
+        <label for="Turco">Turco</label><br>
+    </center>
+    <!--Selección de rango para saber cuantos kilos quiere comprar-->
+    <center>
+        <h2>Cuantos Kg?</h2>
+        <label for="vol">Min. 5 - Max. 20</label><br>
+        <input type="range" id="vol" name="vol" min="5" max="20">
+    </center>
+    <!--Selección múltiple para ingredientes extras-->
+    <center>
+        <h2>Deseas agregar un ingrediente extra?</h2>
+        <input type="checkbox" id="topping1" name="topping1" value="Plátano">
+        <label for="topping1">Plátano..........$30</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Nutella">
+        <label for="topping2">Nutella..........$40</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Chispas de chocolate">
+        <label for="topping3">Chispas de chocolate..........$20</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Chochitos de colores">
+        <label for="topping3">Chochitos de colores..........$18</label>
+    </center>
+    <!--Agregamos formulario dependiendo el tipo de dato que se requiere-->
+    <center>
+        <h2>Proporciona tus datos:</h2>
+        <label for="Input1"> Nombre completo&nbsp;</label>
+        <input type="text" id="Input1" name="Input1">
+        <br>
+        <label for="numero1">Teléfono&nbsp;</label>
+        <input type="number" id="numero1" name="numero1">
+        <br>
+        <label for="Input2">Dirección&nbsp;</label>
+        <input type="text" id="Input2" name="Input2">
+    </center>
+    <!--Ingresar fecha de entrega-->
+    <center>
+        <label for="fecha1">Fecha de entrega&nbsp;</label>
+        <input type="date" id="fecha1" name="fecha1"><br><br>
+    </center>
+    <!--Botón para enviar formulario-->
+    <center>
+        <input type="button" id="boton1" name="boton1" value="Realizar pedido" onclick="alert('Nos comunicaremos contigo para acordar el pago');">
+        <br>
+    </center>
+</body>
